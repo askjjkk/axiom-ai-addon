@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.example.axiomai.client.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "EditorUIMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 0
+  }
+}

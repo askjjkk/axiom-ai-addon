@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "axiomaiaddon",
+  "version": "${version}",
+  "name": "Axiom AI Addon",
+  "description": "Adds an AI chat to Axiom that writes Script Brush presets.",
+  "authors": ["Sasha"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.example.axiomai.AxiomAI"
+    ],
+    "client": [
+      "com.example.axiomai.client.AxiomAIClient"
+    ]
+  },
+  "mixins": [
+    {
+      "config": "axiomaiaddon.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "~${minecraft_version}",
+    "java": ">=25",
+    "fabric-api": "*",
+    "axiom": "*"
+  }
+}

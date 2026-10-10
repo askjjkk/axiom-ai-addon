@@ -1,0 +1,15 @@
+# Gradle и IDE
+.gradle/
+build/
+.idea/
+*.iml
+run/
+
+# Чужие закрытые jar, их нельзя выкладывать в репозиторий
+libs/*.jar
+
+# Локальные тесты, конфиги и ключи
+test-config/config.json
+test-output/
+config.json
+*.key
